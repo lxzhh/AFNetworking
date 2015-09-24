@@ -28,6 +28,7 @@
 		29C4E1461BB47DBC00D6B073 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C4E1261BB46D3F00D6B073 /* UIProgressView+AFNetworking.m */; };
 		29C4E1471BB47DBC00D6B073 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C4E1281BB46D3F00D6B073 /* UIRefreshControl+AFNetworking.m */; };
 		29C4E1481BB47DBC00D6B073 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C4E12A1BB46D3F00D6B073 /* UIWebView+AFNetworking.m */; };
+		29C4E14F1BB480F400D6B073 /* Gravatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C4E14E1BB480F400D6B073 /* Gravatar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		29C4E13B1BB47D3100D6B073 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = ../../AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
 		29C4E13C1BB47D3100D6B073 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = ../../AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
 		29C4E13D1BB47D3100D6B073 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = ../../AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		29C4E14E1BB480F400D6B073 /* Gravatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gravatar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		29C4E0C51BB4599400D6B073 /* AFNetworking tvOS Example */ = {
 			isa = PBXGroup;
 			children = (
+				29C4E14E1BB480F400D6B073 /* Gravatar.swift */,
 				29C4E0F41BB45C5500D6B073 /* AFNetworking tvOS Example-Bridging-Header.h */,
 				29C4E0D51BB459C400D6B073 /* Vendor */,
 				29C4E0C61BB4599400D6B073 /* AppDelegate.swift */,
@@ -305,6 +308,7 @@
 				29C4E1471BB47DBC00D6B073 /* UIRefreshControl+AFNetworking.m in Sources */,
 				29C4E1481BB47DBC00D6B073 /* UIWebView+AFNetworking.m in Sources */,
 				29C4E1141BB46C8300D6B073 /* AFHTTPSessionManager.m in Sources */,
+				29C4E14F1BB480F400D6B073 /* Gravatar.swift in Sources */,
 				29C4E10A1BB46BFC00D6B073 /* AFURLResponseSerialization.m in Sources */,
 				29C4E1421BB47DBC00D6B073 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 			);
