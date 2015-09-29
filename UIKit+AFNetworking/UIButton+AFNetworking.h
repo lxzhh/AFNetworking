@@ -38,12 +38,21 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface UIButton (AFNetworking)
 
+///------------------------------------
+/// @name Accessing the Image Downloader
+///------------------------------------
+
+/**
+ Set the shared image downloader used to download images.
+
+ @param imageDownloader The shared image downloader used to download images.
+*/
 + (void)setSharedImageDownloader:(AFImageDownloader *)imageDownloader;
 
-///------------------------------------
-/// @name Accessing Response Serializer
-///------------------------------------
-
+/**
+ The shared image downloader used to download images.
+ */
++ (AFImageDownloader *)sharedImageDownloader;
 
 ///--------------------
 /// @name Setting Image
@@ -83,8 +92,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param state The control state.
  @param urlRequest The URL request used for the image request.
  @param placeholderImage The image to be set initially, until the image request finishes. If `nil`, the button will not change its image until the image request finishes.
- @param success A block to be executed when the image request operation finishes successfully. This block has no return value and takes two arguments: the server response and the image. If the image was returned from cache, the request and response parameters will be `nil`.
- @param failure A block object to be executed when the image request operation finishes unsuccessfully, or that finishes successfully. This block has no return value and takes a single argument: the error that occurred.
+ @param success A block to be executed when the image data task finishes successfully. This block has no return value and takes two arguments: the server response and the image. If the image was returned from cache, the request and response parameters will be `nil`.
+ @param failure A block object to be executed when the image data task finishes unsuccessfully, or that finishes successfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the error object describing the network or parsing error that occurred.
  */
 - (void)setImageForState:(UIControlState)state
           withURLRequest:(NSURLRequest *)urlRequest
